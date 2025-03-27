@@ -1,8 +1,8 @@
 const PricingSection = () => {
   return (
-    <section className="py-20 bg-white">
-      <h2 className="text-center text-3xl font-bold mb-10">
-        Built for enterprise scale. Retool is designed <br /> for teams with a security mindset.
+    <section className="my-20 bg-white">
+      <h2 className="text-center text-4xl font-bold mb-12">
+        Built for enterprise scale. <span className="text-gray-500">Retool is designed <br /> for teams with a security mindset.</span> 
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4 md:px-20">
         {[
@@ -30,7 +30,7 @@ const PricingSection = () => {
               <ul className="space-y-2">
                 {[
                   "Up to 1000 contacts",
-                  "Easily import people from Email, Calendar, Twitter, LinkedIn, Facebook.",
+                  "Easily import people from Email, Calendar",
                   "Get organized with Search and Groups",
                   "Stay in touch with Reconnect & Reminders",
                 ].map((item, idx) => (
