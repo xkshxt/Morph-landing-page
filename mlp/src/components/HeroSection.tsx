@@ -1,16 +1,26 @@
-// src/components/HeroSection.tsx
-
 const HeroSection = () => {
   return (
-    <section className="flex flex-col items-center justify-center text-center py-20 mt-15 bg-white">
-      <h1 className="text-5xl font-semibold mb-4">
-        The fastest -- way to build <br/> internal software
+    <section className="relative flex flex-col items-center justify-center text-center pt-20 bg-white">
+      <h1 className="text-6xl font-semibold mb-4">
+        The fastest — way to build <br /> internal software
       </h1>
-      <img
-        src="https://plus.unsplash.com/premium_photo-1683121710572-7723bd2e235d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzd8fHRlY2hub2xvZ3l8ZW58MHx8MHx8fDA%3D"
-        alt="Product showcase"
-        className="w-full max-w-4xl rounded-xl mt-10"
-      />
+      <div className="relative mt-10">
+        <img
+          src="https://cdn.pixabay.com/photo/2024/05/27/21/26/desk-8792352_1280.png"
+          alt="Product showcase"
+          className="w-full max-w-4xl rounded-2xl relative z-10"
+        />
+        <img
+          src="https://cdn.pixabay.com/photo/2023/05/30/13/23/technology-8028575_1280.jpg"
+          alt="Background Image 1"
+          className="absolute top-2/3 left-[-400px] w-1/2  rounded-2xl transform -translate-y-1/2 z-0"
+        />
+        <img
+          src="https://cdn.pixabay.com/photo/2024/06/14/12/14/cyborg-8829739_1280.png"
+          alt="Background Image 2"
+          className="absolute top-2/3 right-[-400px] w-1/2  rounded-2xl transform -translate-y-1/2 z-0"
+        />
+      </div>
     </section>
   );
 };
