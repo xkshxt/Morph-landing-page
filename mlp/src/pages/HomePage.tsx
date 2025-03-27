@@ -1,5 +1,5 @@
 // src/pages/HomePage.tsx
-import Header from '../components/Header';
+import Navbar from '../components/Navbar';
 import HeroSection from '../components/HeroSection';
 import FeaturesSection from '../components/FeaturesSection';
 import BenefitsSection from '../components/BenefitsSection';
@@ -11,7 +11,7 @@ import Footer from '../components/Footer';
 const HomePage = () => {
   return (
     <div>
-      <Header />
+      <Navbar />
       <HeroSection />
       <FeaturesSection />
       <BenefitsSection />
