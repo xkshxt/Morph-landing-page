@@ -15,7 +15,7 @@ const Navbar = () => {
           Devtol
         </div>
         <button
-          className="lg:hidden block text-gray-700" // Show toggle only on smaller screens
+          className="lg:hidden block text-gray-700"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           <svg
@@ -33,12 +33,8 @@ const Navbar = () => {
             ></path>
           </svg>
         </button>
-        <nav
-          className={`lg:flex lg:items-center ${
-            isMenuOpen ? 'block' : 'hidden'
-          } lg:block`} // Show full menu on lg and above
-        >
-          <ul className="flex flex-col lg:flex-row lg:space-x-7 space-y-2 lg:space-y-0 lg:ml-14">
+        <nav className="hidden lg:flex lg:items-center">
+          <ul className="flex space-x-7">
             <li>
               <a href="#products" className="hover:text-blue-500">
                 Products
@@ -65,24 +61,53 @@ const Navbar = () => {
               </a>
             </li>
           </ul>
+          <div className="flex ml-4">
+            <button className="mr-2 bg-gray-200 py-2 px-5 rounded-3xl">
+              Book Demo
+            </button>
+            <button className="bg-blue-500 text-white py-2 px-5 rounded-3xl">
+              Get Started
+            </button>
+          </div>
         </nav>
-        <div className="hidden lg:flex"> {/* Show buttons on lg and above */}
-          <button className="mr-2 bg-gray-200 py-2 px-5 rounded-3xl">
-            Book Demo
-          </button>
-          <button className="bg-blue-500 text-white py-2 px-5 rounded-3xl">
-            Get Started
-          </button>
-        </div>
       </div>
       {isMenuOpen && (
-        <div className="lg:hidden flex flex-col items-center pb-4">
-          <button className="mb-2 bg-gray-200 py-2 px-5 rounded-3xl">
-            Book Demo
-          </button>
-          <button className="bg-blue-500 text-white py-2 px-5 rounded-3xl">
-            Get Started
-          </button>
+        <div className="lg:hidden bg-gray-100 shadow-md">
+          <ul className="flex flex-col items-center space-y-4 py-4">
+            <li>
+              <a href="#products" className="hover:text-blue-500">
+                Products
+              </a>
+            </li>
+            <li>
+              <a href="#enterprise" className="hover:text-blue-500">
+                Enterprise
+              </a>
+            </li>
+            <li>
+              <a href="#use-case" className="hover:text-blue-500">
+                Use Case
+              </a>
+            </li>
+            <li>
+              <a href="#pricing" className="hover:text-blue-500">
+                Pricing
+              </a>
+            </li>
+            <li>
+              <a href="#docs" className="hover:text-blue-500">
+                Docs
+              </a>
+            </li>
+          </ul>
+          <div className="flex flex-col items-center space-y-2 pb-4">
+            <button className="bg-gray-200 py-2 px-5 rounded-3xl">
+              Book Demo
+            </button>
+            <button className="bg-blue-500 text-white py-2 px-5 rounded-3xl">
+              Get Started
+            </button>
+          </div>
         </div>
       )}
     </header>

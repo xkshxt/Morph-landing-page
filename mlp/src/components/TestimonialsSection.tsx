@@ -1,7 +1,7 @@
 const TestimonialsSection = () => {
   return (
-    <section className="py-20 bg-white">
-      <h2 className="text-center text-3xl font-semibold mb-10">
+    <section className="py-20 bg-gray-50">
+      <h2 className="text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-10">
         Join 47,954 customers <span className="text-gray-500">who use our link <br /> management infrastructure to take their <br /> marketing efforts to the next level.</span> 
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4 md:px-20">

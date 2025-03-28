@@ -34,8 +34,8 @@ const BenefitsSection = () => {
 
   return (
     <section className="py-20 bg-gray-50">
-      <h2 className="text-center text-3xl font-semibold mb-10">
-        Built for enterprise scale. Retool is designed <br /> for teams with a security mindset.
+      <h2 className="text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-12">
+        Built for enterprise scale. <span className="text-gray-500">Retool is designed <br /> for teams with a security mindset.</span>
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4 md:px-20">
         {benefits.map((benefit, index) => (
@@ -46,7 +46,7 @@ const BenefitsSection = () => {
               className="w-10 h-10 mb-3"
             />
             <div>
-              <h3 className="font-bold mb-2">{benefit.title}</h3>
+              <h3 className="text-2xl font-semibold mb-2">{benefit.title}</h3>
               <p>{benefit.description}</p>
             </div>
           </div>

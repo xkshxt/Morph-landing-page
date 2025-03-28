@@ -1,8 +1,8 @@
 const PricingSection = () => {
   return (
     <section className="my-20 bg-white">
-      <h2 className="text-center text-4xl font-bold mb-12">
-        Built for enterprise scale. <span className="text-gray-500">Retool is designed <br /> for teams with a security mindset.</span> 
+      <h2 className="text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-12">
+        Built for enterprise scale. <span className="text-gray-500">Retool is designed <br /> for teams with a security mindset.</span>
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4 md:px-20">
         {[
@@ -17,9 +17,11 @@ const PricingSection = () => {
               background: 'linear-gradient(to bottom, white 60%, #ebf8ff 60%)',
             }}
           >
-            <div className="absolute top-[-20px] left-1/2 transform -translate-x-1/2">
-              <span className={`${badge.color} ${badge.textColor} px-3 py-2 rounded-md shadow-md text-md`}>{badge.label}</span>
-            </div>
+            {badge.label !== "Economic Value" && ( // Conditionally render the badge
+              <div className="absolute top-[-20px] left-1/2 transform -translate-x-1/2">
+                <span className={`${badge.color} ${badge.textColor} px-3 py-2 rounded-md shadow-md text-md`}>{badge.label}</span>
+              </div>
+            )}
             <h3 className="text-xl font-bold mb-2 mt-6">Part-time Pro</h3>
             <p className="mb-4">One part-time creative dedicated to your continuous stream of projects.</p>
             <div className="text-3xl font-bold mb-4">$6400 <span className="text-lg font-normal">/month</span></div>
