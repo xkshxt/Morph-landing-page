@@ -3,7 +3,7 @@ const HeroSection = () => {
   return (
     <section className="relative flex flex-col items-center justify-center text-center pt-20 bg-white">
       <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold mb-4">
-        The fastest — way to build <br /> internal software
+        <span className="text-blue-600">The fastest</span> — way to build <br /> internal software
       </h1>
       <div className="relative mt-10 w-full flex justify-center items-center">
         <img
