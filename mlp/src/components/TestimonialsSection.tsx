@@ -6,7 +6,7 @@ const TestimonialsSection = () => {
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4 md:px-20">
         {Array(9).fill(null).map((_, index) => (
-          <div key={index} className={`p-6 rounded-lg shadow-md ${index % 3 === 0 ? 'bg-purple-900 text-white' : 'bg-white'}`}>
+          <div key={index} className={`p-6 rounded-lg shadow-md ${index % 9 === 0 ? 'bg-purple-900 text-white' : 'bg-white'}`}>
             <h3 className="font-bold mb-2">Vercel</h3>
             <p className="mb-4">"Devtol link infrastructure & analytics has helped us gain valuable insights."</p>
             <div className="flex items-center">
