@@ -1,12 +1,13 @@
 // src/App.tsx
+
 import HomePage from './pages/HomePage';
 
-function App() {
+const App = () => {
   return (
-    <div>
+    <>
       <HomePage />
-    </div>
+    </>
   );
-}
+};
 
 export default App;

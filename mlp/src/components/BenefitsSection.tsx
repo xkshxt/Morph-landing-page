@@ -1,4 +1,5 @@
 const BenefitsSection = () => {
+  // List of benefits with title, description, and icon URL
   const benefits = [
     {
       title: "Custom SSO",
@@ -34,17 +35,26 @@ const BenefitsSection = () => {
 
   return (
     <section className="py-20 bg-gray-50">
+      {/* Section Title */}
       <h2 className="text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-12">
-        Built for enterprise scale. <span className="text-gray-500">Retool is designed <br /> for teams with a security mindset.</span>
+        Built for enterprise scale. 
+        <span className="text-gray-500">
+          Retool is designed <br /> for teams with a security mindset.
+        </span>
       </h2>
+
+      {/* Grid Layout for Benefits */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4 md:px-20">
+        {/* Mapping over benefits array to generate each benefit card */}
         {benefits.map((benefit, index) => (
           <div key={index} className="bg-white p-6 rounded-2xl shadow-md py-10 px-10">
+            {/* Benefit Icon */}
             <img 
               src={benefit.icon} 
               alt={`${benefit.title} Icon`} 
               className="w-10 h-10 mb-3"
             />
+            {/* Benefit Title & Description */}
             <div>
               <h3 className="text-2xl font-semibold mb-2">{benefit.title}</h3>
               <p>{benefit.description}</p>
